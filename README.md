@@ -1,3 +1,16 @@
+# PID Box Process
+## Our Design 
+In order to complete our PID box, we wanted to 
+
+## Important Information 
+In order to make our box out of cardboard, some adjustments were necessary in the design process. 
+
+small square -> measure -> cut in half -> measure -> calculate curve -> add curve to each side of box in CAD
+
+Friction Fit 
+
+Problems -> Assembly 
+
 # PID Box Planning
 
 We will create a box with a spinning wheel powered by a DC motor, an arduino and potentiometer, monitored with a photointerrupter that will display rotations per minute and correct for error using a proportional-integral-derivative controller. Additionally, we would like to minimize wasted materials and use cardboard rather than acrylic as well as a friction fit design. 
