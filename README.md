@@ -5,13 +5,21 @@ In order to complete our PID box, we wanted to utilize cardboard in order to mak
 ## Important Information on Design 
 In order to make our box out of cardboard, some adjustments were necessary in the design process. 
 
-We chose to use single thickness rather than double corregated cardboard. When cutting with cardboard, it is important to remember that the laser cutter will burn off some of the material so the CAD files must be adjusted for this by measuring curve (or how much the laser cutter takes off) and adding this value to all of the sides to ensure a tight fit on the final box. We had to keep in mind that the CAD files adjusted with curve will not mate together in a Solidworks assembly very smoothly so extra precautions had to be made so that the lack of an accurate assembly didn't result in mis-measured or mis-fit parts. 
+### Adjustments 
+We chose to use single thickness rather than double corregated cardboard. When cutting with cardboard, it is important to remember that the laser cutter will burn off some of the material so the CAD files must be adjusted for this by measuring kerf (or how much the laser cutter takes off) and adding this value to all of the sides to ensure a tight fit on the final box.
 
-The laser cutter has no "cardboard" setting so after some trial and error we determined that the best stand in setting was to utilize the Natural -> Wood -> Soft Wood -> Balsa setting and measure the thickness of the cardboard to determine the setting. 
+We had to keep in mind that the CAD files adjusted with Kerf will not mate together in a Solidworks assembly very smoothly so extra precautions had to be made so that the lack of an accurate assembly didn't result in mis-measured or mis-fit parts. 
 
-To measure curve, a small rectange was laser cut out of our desired cardboard and the length measured (l), next we made another cut down the middle of that rectangle, placed the pieces together and measured the new length(l'). Curve could then be calculated as (l-l'). 
+### Using the Laser Cutter With Cardboard 
+The laser cutter now has a trial cardboard setting under Natural -> Cardboard -> Test. Because cardboard does burn, it creates smoke and needs to be carefully attended during cutting. This smoke/ash also has the ability to collect on the lens so when cutting a lot of cardboard, be even more careful and if you think that too many particles have collectted on the lens, contact Shields or another teacher so that they may remove and clean it. 
 
-The friction fit design of the box was made using a puzzle-piece esq side and then utilizing the configurations tool to make the other sides.  
+### Measuring Kerf
+To measure kerf, a small rectange was laser cut out of our desired cardboard and the length measured (l), next we made another cut down the middle of that rectangle, placed the pieces together and measured the new length(l'). Kerf could then be calculated as (l-l'). 
+
+### Friction Fit
+Rather than using the traditional T-cuts that are utilized with Acrylic and other hard materials, cardboard is more effective if it is held together using a friction fit design or a design that does not utilize screws to hold the box together and rather the inherent properties of the cardboard. Our box design uses puzzle-piece esq sides with tabs that connect together. We used the configurations tool to make all the separate sides and created the tabs so that they would be the thickness of the cardboard plus kerf. 
+
+![Friction Fit](https://github.com/ktremag/PID-Box/blob/master/Media/cardboard.PNG)
 
 # PID Box Planning
 
