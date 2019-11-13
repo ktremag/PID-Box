@@ -39,7 +39,7 @@ In general, CAD will be up to Frank while coding, wiring and git will be handled
 ## Criteria and Constraints 
 We would like to minimize the total size of our box in order to make it more handheld rather than large and bulky. Additonally, we are attempting a box made of cardboard which complicates the design process somewhat as making cardboard not look unattractive will be an obstacle. Cable/wire placement will likewise need to be managed as minimizing total volume of the box will necessitate more organized wires for functionality.
 
-![Design Sketch](https://github.com/ktremag/PID-Box/blob/master/Media/PID_Box.PNG)
+![Friction Fit](https://github.com/ktremag/PID-Box/blob/master/Media/PID_Box.PNG | width=30)
 
 ## Materials
 We expect the necessary materials to be: 
