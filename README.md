@@ -18,7 +18,7 @@ The friction fit design of the box was made using a puzzle-piece esq side and th
 We will create a box with a spinning wheel powered by a DC motor, an arduino and potentiometer, monitored with a photointerrupter that will display rotations per minute and correct for error using a proportional-integral-derivative controller. Additionally, we would like to minimize wasted materials and use cardboard rather than acrylic as well as a friction fit design. 
 
 ## Schedule
-We hope to finish this project by November 15th, our weekly milestones and deadlines may be found on our Google Calendar
+We hope to finish this project by November 22nd, our weekly milestones and deadlines may be found on our Google Calendar
 
 __Coding and Wiring Process:__ Spin a wheel >> read a wheel speed >> control wheel speed >> implement PID control of wheel speed >> add LEDs, indicators etc. >> Streamline code and wiring
 
