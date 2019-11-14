@@ -25,16 +25,14 @@ void setup()
 
 	//variables
 	rpm = 0;
-	time = 0;
+	timeRev = 0;
 	prev = 0; 
   	//PinModes etc.
   	pinMode(potPin, INPUT); //potentiometer = input
   	pinMode(moPin, OUTPUT); //motor = output
   	pinMode(pintPin1, INPUT_PULLUP);
-    pinMode(pintPin2, INPUT_PULLUP);
-  	
   	//Interrupts for photoint
-  	attachInterrupt(digitalPinToInterrupt(pintPin2), on, RISING);
+  	attachInterrupt(digitalPinToInterrupt(pintPin1), on, RISING);
   } 
   
 void on (){
@@ -42,7 +40,7 @@ void on (){
 }
 
 int calcRPM(){
-	rpm = 30*1000/count*(millis()-timeRev);
+	rpm = 30000/count*(millis()-timeRev);
 	timeRev = millis();
 	count = 0; 
 	prev = curr; 
@@ -66,12 +64,12 @@ void loop()
 	//LCD
 	lcd.setCursor(0, 0);
 		lcd.print("setting" + t);
-
+	Serial.println(count);
 	//after 5 interrupts, calculate rpm
 	if (count >= 5){
 		int R = calcRPM();
-		Serial.println(R);
-		lcd.print("rpm:" + R)
+	//	Serial.println(R);
+	//	lcd.print("rpm:" + R);
 	}
 	
 
