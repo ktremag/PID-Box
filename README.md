@@ -19,7 +19,7 @@ To measure kerf, a small rectange was laser cut out of our desired cardboard and
 ### Friction Fit
 Rather than using the traditional T-cuts that are utilized with Acrylic and other hard materials, cardboard is more effective if it is held together using a friction fit design or a design that does not utilize screws to hold the box together and rather the inherent properties of the cardboard. Our box design uses puzzle-piece esq sides with tabs that connect together. We used the configurations tool to make all the separate sides and created the tabs so that they would be the thickness of the cardboard plus kerf. 
 
-![Friction Fit](https://github.com/ktremag/PID-Box/blob/master/Media/cardboard.jpg)
+### ![Friction Fit](https://github.com/ktremag/PID-Box/blob/master/Media/cardboard.jpg)
 
 # PID Box Planning
 
