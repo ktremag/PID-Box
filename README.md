@@ -30,7 +30,7 @@ We hope to finish this project by December 6th, our weekly milestones and deadli
 
 __Coding and Wiring Process:__ Spin a wheel >> read a wheel speed >> control wheel speed >> implement PID control of wheel speed >> add LEDs, indicators etc. >> Streamline code and wiring
 
-__Solidworks/CAD:__ Determine curve of cardboard material >> Design box skeleton >> Fricton fit w/ cardboard >> Integrating specific parts/devices >> assemble w/ parts in CAD >> work on actual cardboard etching etc. in order to not look like trash. 
+__Solidworks/CAD:__ Determine kerf of cardboard material >> Design box skeleton >> Fricton fit w/ cardboard >> Integrating specific parts/devices >> assemble w/ parts in CAD >> work on actual cardboard etching etc. in order to not look like trash. 
 
 Additionally, we will design/cut a wheel out of acrylic early on in the project so that the code may be fine tuned to the actual goal.
 
