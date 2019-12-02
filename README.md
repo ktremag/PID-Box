@@ -35,6 +35,11 @@ __Solidworks/CAD:__ Determine kerf of cardboard material >> Design box skeleton 
 Additionally, we will design/cut a wheel out of acrylic early on in the project so that the code may be fine tuned to the actual goal.
 
 In general, CAD will be up to Frank while coding, wiring and git will be handled by Kit.
+## Weekly Milestones
+
+December 6 - Frank: finish updating the midplate & add things for mounting breadboard, Kit: begin to implement PID
+December 13 - Frank: finishing touches + motor mount for bok, Kit: calibrate PID and add switches + leds
+December 16 - Assemble final and modify for efficiency 
 
 ## Criteria and Constraints 
 We would like to minimize the total size of our box in order to make it more handheld rather than large and bulky. Additonally, we are attempting a box made of cardboard which complicates the design process somewhat as making cardboard not look unattractive will be an obstacle. Cable/wire placement will likewise need to be managed as minimizing total volume of the box will necessitate more organized wires for functionality.
