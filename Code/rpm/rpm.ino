@@ -13,6 +13,7 @@ unsigned long prev, curr; //previous & current times
 int t = 0;
 int count =0;
 int calcu = 0;
+int error, integ, dt;
 
 
 void setup()
@@ -46,6 +47,14 @@ int calcRPM(){
 	count = 0; 
 	prev = curr;  
 	return rpm; 
+}
+void pid(){
+	error = t - rpm; 
+	integ = integ + (error * dt);
+	derivative = (error - prevErr)/dt;
+	derive = (error*kP) + (Integral*kI) + (Derivative*kD);
+	prevErr = error;
+	delay(dt);
 }
 void loop()
 {
