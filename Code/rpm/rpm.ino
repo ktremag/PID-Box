@@ -13,8 +13,13 @@ unsigned long prev, curr; //previous & current times
 int t = 0;
 int count =0;
 int calcu = 0;
-int error, integ, dt;
+int Error, Previous_error, Setpoint, Actual;
+float Derivative, Drive, Integral;
 
+long int kP = 1;
+long int kI = 1;
+long int kD = 5;
+long int dt = 5;
 
 void setup()
 {
@@ -49,12 +54,12 @@ int calcRPM(){
 	return rpm; 
 }
 void pid(){
-	error = t - rpm; 
-	integ = integ + (error * dt);
-	derivative = (error - prevErr)/dt;
-	derive = (error*kP) + (Integral*kI) + (Derivative*kD);
-	prevErr = error;
-	delay(dt);
+      Error = Setpoint - Actual;            
+      Integral = Integral + (Error*dt)/10; 
+      Derivative = (Error - Previous_error)/dt; 
+      Drive = (Error*kP) + (Integral*kI) + (Derivative*kD); 
+      Previous_error = Error; 
+      t = Setpoint + Drive;
 }
 void loop()
 {
@@ -62,6 +67,7 @@ void loop()
 	//motor control
 	t = (analogRead(potPin))/4;
 	analogWrite(moPin, t);  
+	setpoint = t; 
 	delay(200);
 	//Serial.println(t);
 
@@ -78,6 +84,7 @@ void loop()
 		int R = calcRPM();
 		Serial.println(R);
 		lcd.print("rpm:" + R)
+		rpm = actual;
 	}
 	
 
